@@ -1,0 +1,42 @@
+/* Diğer css Dosyaları */
+
+@import url(../../general-style.css);
+@import url(../../mobile.css);
+
+.links {
+  margin: 75px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 20px;
+  width: 90%;
+  display: flex;
+  background-color: #ffa300;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s;
+  border-radius: 50px;
+}
+
+.item:hover {
+  opacity: 0.8;
+}
+
+.item a {
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #00629b;
+  font-size: 24px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.item a:hover {
+  color: white;
+}
