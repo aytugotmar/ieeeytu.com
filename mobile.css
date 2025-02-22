@@ -1,0 +1,292 @@
+@media (max-width: 1230px) {
+  .one-cikan-resim img {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .post {
+    margin: 10px;
+    max-width: 30%;
+    font-size: 14px;
+  }
+
+  .post-aciklama {
+    padding-top: 10px;
+  }
+
+  .takim {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-menu li a {
+    font-size: 12px;
+  }
+
+  .kisi img {
+    max-height: 25vh;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .isim {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 875px) {
+  .komiteler img {
+    max-width: 75px;
+  }
+
+  .komite {
+    margin: 15px 35px;
+  }
+
+  .yazi-baslik {
+    margin-top: 50px;
+  }
+
+  .yazi-text {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  .hakkimizda-resim1 {
+    height: 50vh;
+  }
+
+  .hakkimizda-resim2 {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 845px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+  }
+  .social-links {
+    position: fixed;
+    left: calc(50% + 30px);
+    transform: translateX(-50%);
+  }
+  nav .menu li a:hover::after {
+    opacity: 0;
+  }
+  .footer-logo img {
+    width: 200px;
+  }
+  .ik-social .fa-brands,
+  .ik-social .fa-solid {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .title {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .isim {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .komite-logosu img {
+    max-width: 100px;
+  }
+
+  .one-cikan-resim img {
+    max-width: 125px;
+    height: 125px;
+  }
+
+  .post {
+    margin: 7px;
+    max-width: 30%;
+    font-size: 12px;
+  }
+
+  .post-aciklama {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+  #ana-icerik {
+    margin: 5%;
+  }
+  .yil-resim a img {
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+  }
+
+  .item a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 635px) {
+  .logo img {
+    width: 120px;
+  }
+  .ieee-global .menu {
+    margin-left: -20px;
+  }
+  .ieee-global .menu li a {
+    font-size: 10px;
+  }
+  .footer-menu-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    padding: 20px;
+  }
+  .social-links a .fa-brands {
+    font-size: 10px;
+  }
+  .title {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .isim {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .ik-social .fa-brands,
+  .ik-social .fa-solid {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .modal-content {
+    background: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .yazi-baslik {
+    margin-top: 25px;
+  }
+
+  .yazi-text {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-size: 12px;
+  }
+
+  .hakkimizda-resim1 {
+    height: 25vh;
+  }
+
+  .hakkimizda-resim2 {
+    height: 25vh;
+  }
+
+  .one-cikan-resim img {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .post {
+    margin: 7px;
+    max-width: 90%;
+    font-size: 12px;
+  }
+
+  .post-aciklama {
+    padding-top: 10px;
+  }
+
+  .video video {
+    max-height: 50vh;
+    margin: 10px 10px;
+  }
+
+  .galeri img {
+    width: 90%;
+  }
+
+  .kisi img {
+    max-height: 15vh;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .isim {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  body {
+    font-size: 10px;
+  }
+
+  .komite {
+    margin: 10px 25px;
+  }
+
+  .yazi-baslik {
+    margin-top: 25px;
+  }
+
+  .yazi-text {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .hakkimizda-resim1 {
+    height: 25vh;
+  }
+
+  .hakkimizda-resim2 {
+    height: 25vh;
+  }
+
+  .item a {
+    font-size: 12px;
+  }
+  /* 
+  .slogan-container {
+    font-size: 1rem;
+    margin-top: 40px;
+  } */
+}
+
+@media (max-width: 368px) {
+  .sidebar {
+    width: 100%;
+  }
+  .ieee-global .menu li a {
+    font-size: 8px;
+  }
+
+  .social-links {
+    position: fixed;
+    left: calc(50% + 13px);
+    transform: translateX(-50%);
+  }
+  .social-links a .fa-brands {
+    font-size: 8px;
+  }
+  .logo img {
+    width: 80px;
+  }
+}
