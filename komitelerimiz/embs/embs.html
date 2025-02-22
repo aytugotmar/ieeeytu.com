@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="EMBS (Engineering in Medicine & Biology Society), dünya çapında geliştirilen mühendislik bilimleri ile teknolojiyi tıp ve biyolojiye uygulayan, bu amaçla insan yaşam kalitesini arttırmaya yönelik araştırma bilgilerini paylaşarak mesleki gelişimi sağlama, mesleğe teşviki arttırma, teknik standartları belirleme, kişiler ile kurumlar arasındaki ağı genişletme ve geliştirme ayrıca biyomühendislik ve sağlık teknolojilerinin gelecekteki gelişmelerini etkileyecek multidisipliner çalışmaları takip etmek amacıyla kurulmuş 97 ülkede 12000 üyesi olan teknik bir mesleki organizasyondur."
+    />
+    <link
+      style="width: 100px"
+      rel="icon"
+      href="../../images/logo/cropped-parasut.png"
+      type="ieee paraşüt"
+    />
+    <title>IEEE YTU - EMBS</title>
+    <!-- Open Sans Fontu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kodu -->
+    <script
+      src="https://kit.fontawesome.com/7d82d2409d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../mobile.css" />
+  </head>
+
+  <body>
+
+    
+    <!-- Loader   -->
+
+    <div id="loading">
+      <img src="../../images/loader.svg" alt="loader">
+    </div>
+
+    
+    <!-- Header -->
+
+    <div class="ieee-global">
+      <ul class="menu">
+        <li><a href="https://www.ieee.org/" target="_blank">IEEE.org</a></li>
+        <li>
+          <a href="https://ieeextreme.org/" target="_blank">IEEEXTREME</a>
+        </li>
+        <li>
+          <a href="https://standards.ieee.org/" target="_blank"
+            >IEEE Standarts</a
+          >
+        </li>
+        <li>
+          <a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a>
+        </li>
+        <li>
+          <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank"
+            >IEEEXplore</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <nav class="header-menu">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../images/logo/ieee-ytu-tranparan.png" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- Menü -->
+
+      <nav>
+        <ul class="sidebar menu">
+          <li onclick="closeSidebar()">
+            <a href="javascript:void(0)"
+              ><i class="fa-solid fa-xmark" style="color: #ffa300"></i
+            ></a>
+          </li>
+          <li><a href="../../index.html">Ana Sayfa</a></li>
+          <li><a href="../../hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../../ekibimiz/ekibimiz.html">Ekibimiz</a></li>
+          <li>
+            <a href="../../index.html#komitelerimiz">Komitelerimiz</a>
+          </li>
+          <li>
+            <a href="../../index.html#takimlarimiz">Teknik Takımlarımız</a>
+          </li>
+          <li><a href="../../iletisim/iletisim.php">İletişim</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li class="hideOnMobile"><a href="../../index.html">Ana Sayfa</a></li>
+          <li class="hideOnMobile">
+            <a href="../../hakkimizda.html">Hakkımızda</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../../ekibimiz/ekibimiz.html">Ekibimiz</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../../index.html#komitelerimiz"
+              >Komitelerimiz &nbsp;&nbsp;
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="hideOnMobile dropdown">
+              <li><a href="../basin-yayin/basin-yayin.html">Basın-Yayın</a></li>
+              <li>
+                <a href="../cas/cas.html"
+                  >CAS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li>
+                    <a href="../cas/casmarine/casmarine.html">CASMARINE</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../cs/cs.html"
+                  >CS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li><a href="../cs/cs-forge/cs-forge.html">CS FORGE</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="embs.html"
+                  >EMBS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li><a href="biomech/biomech.html">BIOMECH</a></li>
+                </ul>
+              </li>
+              <li><a href="../iltek/iltek.html">İLTEK</a></li>
+              <li><a href="../kgk/kgk.html">KGK</a></li>
+              <li><a href="../rlc/rlc.html">RLC</a></li>
+              <li><a href="../ttk/ttk.html">TTK</a></li>
+              <li><a href="../wie/wie.html">WIE</a></li>
+              <li><a href="../yp/yp.html">YP</a></li>
+            </ul>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../../iletisim/iletisim.php">İletişim</a>
+          </li>
+          <li
+            class="menu-button"
+            onclick="showSidebar()"
+            style="margin-left: 1px"
+          >
+            <a href="javascript:void(0)"
+              ><i class="fa-solid fa-bars" style="color: #ffa300"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ieeeytu/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ieeeytu" target="_blank" class="social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@ieeeytu"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/YTUIEEE"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ytu-ieee-student-branch/posts/?feedView=all"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </nav>
+    <br /><br />
+
+    <!-- Ana İçerik -->
+    <div id="ana-icerik">
+      <!-- Komite Başlığı -->
+
+      <div class="komite-basligi">
+        <div class="item komite-adi">
+          <h1>Engineering in Medicine & Biology Society</h1>
+        </div>
+
+        <div class="item komite-logosu">
+          <img src="images/komite-logo.png" alt="embs-logo" />
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <!-- Açıklama Yazısı -->
+
+      <article>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <strong>EMBS (Engineering in Medicine & Biology Society)</strong>,
+          dünya çapında geliştirilen mühendislik bilimleri ile teknolojiyi tıp
+          ve biyolojiye uygulayan, bu amaçla insan yaşam kalitesini arttırmaya
+          yönelik araştırma bilgilerini paylaşarak mesleki gelişimi sağlama,
+          mesleğe teşviki arttırma, teknik standartları belirleme, kişiler ile
+          kurumlar arasındaki ağı genişletme ve geliştirme ayrıca
+          biyomühendislik ve sağlık teknolojilerinin gelecekteki gelişmelerini
+          etkileyecek multidisipliner çalışmaları takip etmek amacıyla kurulmuş
+          <strong>
+            97 ülkede 12000 üyesi olan teknik bir mesleki
+            organizasyondur.</strong
+          >
+        </p>
+        <br />
+        <br />
+        <ul>
+          <h4>YTÜ EMBS Olarak;</h4>
+          <br />
+          <li>
+            İlaç, medikal, genetik, tıp, biyoinformatik, biyomekatronik, ve
+            birçok alandaki mühendislik ve teknoloji gelişmelerini takip etmek,
+          </li>
+          <br />
+          <li>
+            Biyomühendislik, moleküler biyoloji ve genetik, kimya, biyoloji,
+            kimya mühendisliği, biyomedikal mühendisliği, mekatronik
+            mühendisliği, kontrol otomasyon mühendisliği öğrencileri, öğretim
+            üyeleri ve sektör çalışanları arasındaki bilginin gelişimini,
+            yayılmasını, entegrasyon ve kullanımını sağlamak,
+          </li>
+          <br />
+          <li>
+            Mühendislik öğrencilerine karşılaşabilecekleri teknik olmayan
+            konularda profesyonel olarak hareket edebilme yetisini kazandırmak,
+          </li>
+          <br />
+          <li>
+            Hem resmi hem gayri resmi akademik ve endüstri profesyonelleri ile
+            mühendislik öğrencileri arasındaki iletişim ağını sağlamak ve
+            böylece organizasyonlardaki endüstri katılımını arttırmak,
+          </li>
+          <br />
+          <li>
+            Oluşturulan geniş ve kapsamlı network sayesinde en güncel bilgileri
+            paylaşarak iş piyasasındaki meslektaşlarımıza karşı rekabet avantajı
+            sağlamak,
+          </li>
+          <br />
+          <li>
+            Uluslararası toplantılar, paneller, workshop ve konferanslar ile
+            farklı disiplinlerlerdeki bilim insanları, mühendisleri ve hekimleri
+            bir araya getirerek teknik standartları yakalamayı hedefliyoruz.
+          </li>
+
+          <br />
+        </ul>
+        <p>
+          Tüm bunlarla beraber Teknofest en iyi girişim alanında birincilik
+          kazanan teknik takımımız <b>Biomech</b>, sizlere biyonik kol
+          takımımıza katılmanız için sene içinde belli eğitimler ve
+          görevlendirmeler veriyor. Bu aşamaları tamamladığınız takdir de sizler
+          de takımımızın bir parçası olabilirsiniz.
+          <strong> Bioform </strong> adlı etkinliğimizde ise tıp, biyoloji,
+          kimya, biyomedikal, ilaç gibi sektörlerdeki önde gelen şirketleri
+          hakkında bilgi alıp onlarla iletişime geçebilmeniz için sizlere ortam
+          sağlıyoruz.
+        </p>
+      </article>
+
+      <br /><br /><br />
+
+      <!-- Komite Faaliyetleri -->
+
+      <section id="komite">
+        <h2 style="color: #981d97">Faaliyetlerimiz:</h2>
+
+        <br /><br />
+
+        <ul>
+          <li>BIOFORM</li>
+
+          <br />
+
+          <li>Teknik Geziler</li>
+
+          <br />
+
+          <li>BIOMECH Teknik Takım Eğitimleri</li>
+        </ul>
+      </section>
+
+      <br /><br /><br />
+
+      <!-- Resimler -->
+
+      <div id="komite-resim">
+        <div class="resim-komite">
+          <img src="images/resim-1.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-2.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-3.png" alt="resim-komite" />
+        </div>
+
+        <!-- <div class="resim-komite">
+          <img src="images/resim-4.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-5.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-6.png" alt="resim-komite" />
+        </div> -->
+      </div>
+
+      <br /><br /><br />
+      <div class="video">
+        <h4>XII. BIOFORM</h4>
+        <video
+          controls="controls"
+          muted
+          autoplay
+          loop="loop"
+          controls
+          src="../../ana-sayfa/video/images/bioform.mp4"
+        >
+          12. Bioform
+        </video>
+      </div>
+      <br /><br /><br />
+
+      <!-- İK Kısmı -->
+
+      <div class="ik-container">
+        <!-- Melis Tablosu -->
+
+        <div class="ik Melis">
+          <img src="../../images/ik-yk-dk/Melis.png" alt="Melis" />
+          <span class="isim">Melis MATBAN</span>
+          <span class="title"><strong>- EMBS BAŞKANI -</strong></span>
+          <div class="ik-social">
+            <a href="https://www.instagram.com/melissmtb/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/melis-matban-034806297/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:melismatban@ieeeytu.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Esma Tablosu -->
+
+        <div class="ik esma">
+          <img src="../../images/ik-yk-dk/Esma.png" alt="Esma" />
+          <span class="isim">Esma AYDIN</span>
+          <span class="title"><strong>- EMBS BAŞKAN YARDIMCISI -</strong></span>
+          <div class="ik-social">
+            <a href="https://www.instagram.com/eesmaydn1/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/esmanur-ayd%C4%B1n-a96702252/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:esmanuraydin@ieeeytu.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+    </div>
+
+    <!-- Footer -->
+
+    <nav class="footer-menu-main">
+      <div class="footer-menu">
+        <ul class="footer-menu">
+          <li><a href="../../index.html">Ana Sayfa</a></li>
+          <li><a href="../../hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../../ekibimiz/ekibimiz.html">Ekibimiz</a></li>
+          <li><a href="../../index.html#komitelerimiz">Komitelerimiz</a></li>
+          <li><a href="../../iletisim/iletisim.php">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a href="../../index.html">
+          <img
+            src="../../images/logo/ieee-ytu-tranparan.png"
+            alt="24.-yıl-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ieeeytu/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ieeeytu" target="_blank" class="social-icon">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@ieeeytu"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/YTUIEEE"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ytu-ieee-student-branch/posts/?feedView=all"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="footer-menu-copyright">
+      <p>
+        2025 Copyright &nbsp; <i class="fa-regular fa-copyright"></i> &nbsp; Tüm
+        Hakları Saklıdır. IEEE YTU Student Branch
+      </p>
+    </div>
+
+    <script src="../../general-script.js"></script>
+  </body>
+</html>

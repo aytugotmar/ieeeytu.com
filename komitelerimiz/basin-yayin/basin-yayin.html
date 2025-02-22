@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Basın-Yayın Komitesi; kulübün tanıtım yazılarını düzenler ve kulübün yaptığı çalışmalar hakkında bültenler hazırlar. Kulüp üyelerinin kendilerini daha etkin ifade edebilmeleri amacıyla temel yazarlık eğitimi, temel tasarım alanında kendini geliştirebilmeleri için temel dizgi eğitimleri ve çeşitli söyleşiler düzenler. Kulübün yayın organı olan ‘Yıldız Tornavida’ dergisini çıkartmak ve ‘Kutup Yıldızı’ etkinliğini organize etmek esas görevidir."
+    />
+    <link
+      style="width: 100px"
+      rel="icon"
+      href="../../images/logo/cropped-parasut.png"
+      type="ieee paraşüt"
+    />
+    <title>IEEE YTU - BY</title>
+    <!-- Open Sans Fontu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kodu -->
+    <script
+      src="https://kit.fontawesome.com/7d82d2409d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../mobile.css" />
+  </head>
+
+  <body>
+
+     <!-- Loader   -->
+
+     <div id="loading">
+      <img src="../../images/loader.svg" alt="loader">
+     </div>
+
+
+    <!-- Header -->
+
+    <nav class="header-menu">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../images/logo/ieee-ytu-tranparan.png" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- Menü -->
+
+      <nav>
+        <ul class="sidebar menu">
+          <li onclick="closeSidebar()">
+            <a href="javascript:void(0)"
+              ><i class="fa-solid fa-xmark" style="color: #ffa300"></i
+            ></a>
+          </li>
+          <li><a href="../../index.html">Ana Sayfa</a></li>
+          <li><a href="../../hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../../ekibimiz/ekibimiz.html">Ekibimiz</a></li>
+          <li>
+            <a href="../../index.html#komitelerimiz">Komitelerimiz</a>
+          </li>
+          <li>
+            <a href="../../index.html#takimlarimiz">Teknik Takımlarımız</a>
+          </li>
+          <li><a href="../../iletisim/iletisim.php">İletişim</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li class="hideOnMobile"><a href="../../index.html">Ana Sayfa</a></li>
+          <li class="hideOnMobile">
+            <a href="../../hakkimizda.html">Hakkımızda</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../../ekibimiz/ekibimiz.html">Ekibimiz</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../../index.html#komitelerimiz"
+              >Komitelerimiz &nbsp;&nbsp;
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="hideOnMobile dropdown">
+              <li><a href="basin-yayin.html">Basın-Yayın</a></li>
+              <li>
+                <a href="../cas/cas.html"
+                  >CAS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li>
+                    <a href="../cas/casmarine/casmarine.html">CASMARINE</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../cs/cs.html"
+                  >CS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li><a href="../cs/cs-forge/cs-forge.html">CS FORGE</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../embs/embs.html"
+                  >EMBS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li><a href="../embs/biomech/biomech.html">BIOMECH</a></li>
+                </ul>
+              </li>
+              <li><a href="../iltek/iltek.html">İLTEK</a></li>
+              <li><a href="../kgk/kgk.html">KGK</a></li>
+              <li><a href="../rlc/rlc.html">RLC</a></li>
+              <li><a href="../ttk/ttk.html">TTK</a></li>
+              <li><a href="../wie/wie.html">WIE</a></li>
+              <li><a href="../yp/yp.html">YP</a></li>
+            </ul>
+          </li>
+          <li class="hideOnMobile">
+            <a href="../../iletisim/iletisim.php">İletişim</a>
+          </li>
+          <li
+            class="menu-button"
+            onclick="showSidebar()"
+            style="margin-left: 1px"
+          >
+            <a href="javascript:void(0)"
+              ><i class="fa-solid fa-bars" style="color: #ffa300"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ieeeytu/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ieeeytu" target="_blank" class="social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@ieeeytu"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/YTUIEEE"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ytu-ieee-student-branch/posts/?feedView=all"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </nav>
+    <br /><br />
+
+    <!-- Ana İçerik -->
+    <div id="ana-icerik">
+      <!-- Komite Başlığı -->
+
+      <div class="komite-basligi">
+        <div class="item komite-adi">
+          <h1>Basın-Yayın Komitesi</h1>
+        </div>
+
+        <div class="item komite-logosu">
+          <img src="images/komite-logo.png" alt="cs-logo" />
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <!-- Açıklama Yazısı -->
+
+      <article>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong
+            >IEEE YTU Basın-Yayın Komitesi</strong
+          >
+          ; kulübün tanıtım yazılarını düzenler ve kulübün yaptığı çalışmalar
+          hakkında bültenler hazırlar. Kulüp üyelerinin kendilerini daha etkin
+          ifade edebilmeleri amacıyla temel yazarlık eğitimi, temel tasarım
+          alanında kendini geliştirebilmeleri için temel dizgi eğitimleri ve
+          çeşitli söyleşiler düzenler. Kulübün yayın organı olan ‘Yıldız
+          Tornavida’ dergisini çıkartmak ve ‘Kutup Yıldızı’ etkinliğini organize
+          etmek esas görevidir.
+
+          <br /><br /><br />
+
+          <strong> Yıldız Tornavida </strong> kulübün yayın organıdır.
+          <strong> ‘Gün gelir, lazım olur.’</strong>
+          sloganlı dergi popüler bilim, teknoloji ve kültür konseptindedir.
+          İçeriğini kulüp haberleri, röportajlar ve kulüp üyelerinin yazdıkları
+          araştırma yazıları oluşturmaktadır. Yıldız Tornavida dergisi
+          Basın-Yayın komitesi tarafından çıkarılmaktadır.
+          <br /><br /><br />
+
+          <strong>Kutup Yıldızı</strong> ise sene başında kulüp üyelerinin
+          motivasyonunu arttırmak ve onlara ilham kaynağı olmak amacıyla
+          düzenlenen; iş, sanat, spor ve bilim dünyasının önde gelen isimlerinin
+          katıldığı 4 temel kategorisi bulunan,
+          <strong>“Geleceğine Yön Ver!”</strong> sloganı ile yola çıkarak
+          öğrencileri hayatlarıyla etkileyecek ve onları harekete geçirecek
+          isimlerin katıldığı sosyal bir etkinliktir. Kutup Yıldızı etkinliğini
+          Basın-Yayın komitesi düzenlemektedir.
+        </p>
+      </article>
+
+      <br /><br /><br />
+
+      <!-- Komite Faaliyetleri -->
+
+      <!-- Resimler -->
+
+      <div id="komite-resim">
+        <div class="resim-komite">
+          <img src="images/resim-1.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-2.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-3.png" alt="resim-komite" />
+        </div>
+
+        <!-- <div class="resim-komite">
+          <img src="images/resim-4.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-5.png" alt="resim-komite" />
+        </div>
+
+        <div class="resim-komite">
+          <img src="images/resim-6.png" alt="resim-komite" />
+        </div> -->
+      </div>
+
+      <br /><br /><br />
+
+      <div class="video">
+        <h4>VIII. KUTUP YILDIZI</h4>
+        <video
+          controls="controls"
+          muted
+          autoplay
+          loop="loop"
+          src="../../ana-sayfa/video/images/kutup.mp4"
+        >
+          8. Kutup Yıldızı
+        </video>
+      </div>
+
+      <br /><br /><br />
+      <!-- İK Kısmı -->
+
+      <div class="ik-container">
+        <!-- Ayberk Tablosu -->
+
+        <div class="ik Fevzi Ayberk Yiğittürk">
+          <img src="../../images/ik-yk-dk/Ayberk.png" alt="Ayberk" />
+          <span class="isim">Fevzi Ayberk YİĞİTTÜRK</span>
+          <span class="title"
+            ><strong>- Basın-Yayın Komitesi Başkanı -</strong></span
+          >
+          <div class="ik-social">
+            <a
+              href="https://www.instagram.com/fevziayberkyigitturk/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ayberk-yi%C4%9Fitt%C3%BCrk-6b7594321/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:fevziayberkyigitturk@ieeeytu.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+    </div>
+
+    <!-- Footer -->
+
+    <nav class="footer-menu-main">
+      <div class="footer-menu">
+        <ul class="footer-menu">
+          <li><a href="../../index.html">Ana Sayfa</a></li>
+          <li><a href="../../hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="../../ekibimiz/ekibimiz.html">Ekibimiz</a></li>
+          <li><a href="../../index.html#komitelerimiz">Komitelerimiz</a></li>
+          <li><a href="../../iletisim/iletisim.php">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a href="../../index.html">
+          <img
+            src="../../images/logo/ieee-ytu-tranparan.png"
+            alt="24.-yıl-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ieeeytu/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ieeeytu" target="_blank" class="social-icon">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@ieeeytu"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/YTUIEEE"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ytu-ieee-student-branch/posts/?feedView=all"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="footer-menu-copyright">
+      <p>
+        2025 Copyright &nbsp; <i class="fa-regular fa-copyright"></i> &nbsp; Tüm
+        Hakları Saklıdır. IEEE YTU Student Branch
+      </p>
+    </div>
+
+    <script src="../../general-script.js"></script>
+  </body>
+</html>
