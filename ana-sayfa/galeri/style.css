@@ -1,0 +1,21 @@
+/* Diğer css Dosyaları */
+
+@import url(../../general-style.css);
+@import url(../../mobile.css);
+
+
+
+.galeri{
+  margin: 75px 0;
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.galeri img{
+  width: 350px;
+  margin: 10px 10px;
+}
+

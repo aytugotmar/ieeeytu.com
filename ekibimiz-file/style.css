@@ -1,0 +1,89 @@
+/* Diğer css Dosyaları */
+
+@import url(../general-style.css);
+@import url(../mobile.css);
+
+
+/* YK */
+h1{
+    text-align: center;
+    padding: 5vh;
+}
+
+.yk{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.kisi{
+    max-width: 40%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kisi img{
+    border-radius: 50%;
+    max-height: 40vh;
+    padding: 3% 0;
+}
+
+.title{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffa300;
+    width: 100%;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.isim{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0;
+    text-align: center;
+}
+
+/* İK */
+
+.ik{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.komite-ekip{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* DK */
+
+.dk{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
