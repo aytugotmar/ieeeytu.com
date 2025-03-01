@@ -1,0 +1,33 @@
+RewriteEngine On
+
+# www yönlendirmesi (HTTPS ile)
+RewriteCond %{HTTP_HOST} ^ieeeytu\.com [NC]
+RewriteRule ^(.*)$ https://www.ieeeytu.com/$1 [R=301,L]
+
+# Uzantıları kaldır (html/php)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.(html|php) [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Uzantısız dosyalara yönlendir (uzantıyı gizleme)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+RewriteEngine On
+RewriteBase /
+
+# "index.php" veya "index.html" yazılmışsa ana dizine yönlendir
+RewriteCond %{THE_REQUEST} /index\.(php|html) [NC]
+RewriteRule ^index\.(php|html)$ / [R=301,L]
+
+# Varsayılan olarak index dosyalarını yükle
+DirectoryIndex index.php index.html
+
+
+# Özel 404 hata sayfası
+ErrorDocument 404 /404.html
+
+Options -Indexes
