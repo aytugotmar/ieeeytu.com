@@ -1,0 +1,12 @@
+/* Diğer css Dosyaları */
+
+@import url(../general-style.css);
+@import url(../mobile.css);
+
+
+.my-3{
+    color: #ffa300;
+}
+
+
+
