@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Tailwind, Bootstrap"
+    />
+    <meta name="author" content="Aytuğ OTMAR" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content=" IEEE YTÜ Öğrenci Kulübü, Yıldız Teknik Üniversitesi’nin; Elektrik Mühendisliği, Elektronik ve Haberleşme Mühendisliği ve Bilgisayar Mühendisliği öğrencilerinin çabaları ile 8 Mayıs 2001 tarihinde kar amacı gütmeyen, dünyanın en büyük mesleki ve teknik organizasyonu olan IEEE ((Institute of Electrical and Electronics Engineers))‘nin 1150 öğrenci kolu arasında resmi olarak faaliyete geçmiştir."
+    />
+    <link
+      style="width: 100px"
+      rel="icon"
+      href="images/logo/cropped-parasut.png"
+      type="ieee paraşüt"
+    />
+    <title>IEEE YTU - Ana Sayfa</title>
+    <!-- Open Sans Fontu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kodu -->
+    <script
+      src="https://kit.fontawesome.com/7d82d2409d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <!-- Loader   -->
+
+    <div id="loading">
+      <img src="images/loader.svg" alt="loader">
+    </div>
+
+
+    <!-- Header -->
+
+    <div class="ieee-global">
+      <ul class="menu">
+        <li><a href="https://www.ieee.org/" target="_blank">IEEE.org</a></li>
+        <li>
+          <a href="https://ieeextreme.org/" target="_blank">IEEEXTREME</a>
+        </li>
+        <li>
+          <a href="https://standards.ieee.org/" target="_blank"
+            >IEEE Standarts</a
+          >
+        </li>
+        <li>
+          <a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a>
+        </li>
+        <li>
+          <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank"
+            >IEEEXplore</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <nav class="header-menu">
+      <div class="logo">
+        <a href="https://www.ieeeytu.com">
+          <img src="images/logo/ieee-ytu-tranparan.png" alt="Logo" />
+        </a>
+      </div>
+
+     <!-- Menü -->
+
+     <nav>
+      <ul class="sidebar menu">
+        <li onclick="closeSidebar()">
+          <a href="javascript:void(0)"
+            ><i class="fa-solid fa-xmark" style="color: #ffa300"></i
+          ></a>
+        </li>
+        <li><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="ekibimiz.html">Ekibimiz</a></li>
+        <li onclick="closeSidebar()">
+          <a href="https://www.ieeeytu.com/index#komitelerimiz">Komitelerimiz</a>
+        </li>
+        <li onclick="closeSidebar()">
+          <a href="https://www.ieeeytu.com/index#takimlarimiz">Teknik Takımlarımız</a>
+        </li>
+        <li><a href="iletisim.php">İletişim</a></li>
+      </ul>
+
+      <ul class="menu">
+        <li class="hideOnMobile"><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
+        <li class="hideOnMobile">
+          <a href="hakkimizda.html">Hakkımızda</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="ekibimiz.html">Ekibimiz</a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="https://www.ieeeytu.com/index#komitelerimiz"
+            >Komitelerimiz &nbsp;&nbsp;
+            <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="hideOnMobile dropdown">
+            <li>
+              <a href="basin-yayin.html"
+                >Basın-Yayın</a
+              >
+            </li>
+            <li>
+              <a href="cas.html"
+                >CAS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+              ></a>
+              <ul class="hideOnMobile dropside">
+                <li>
+                  <a href="casmarine.html"
+                    >CASMARINE</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="cs.html"
+                >CS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+              ></a>
+              <ul class="hideOnMobile dropside">
+                <li>
+                  <a href="cs-forge.html"
+                    >CS FORGE</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="embs.html"
+                >EMBS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+              ></a>
+              <ul class="hideOnMobile dropside">
+                <li>
+                  <a href="biomech.html"
+                    >BIOMECH</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="iltek.html">İLTEK</a></li>
+            <li><a href="kgk.html">KGK</a></li>
+            <li><a href="rlc.html">RLC</a></li>
+            <li><a href="ttk.html">TTK</a></li>
+            <li><a href="wie.html">WIE</a></li>
+            <li><a href="yp.html">YP</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile">
+          <a href="iletisim.php">İletişim</a>
+        </li>
+        <li
+          class="menu-button"
+          onclick="showSidebar()"
+          style="margin-left: 1px"
+        >
+          <a href="javascript:void(0)"
+            ><i class="fa-solid fa-bars" style="color: #ffa300"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+      
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ieeeytu/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ieeeytu" target="_blank" class="social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@ieeeytu"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/YTUIEEE"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ytu-ieee-student-branch/posts/?feedView=all"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+
+    <!-- Kapak Resmi -->
+    <div class="kapak">
+      <div class="yil-resim">
+        <a href="index.html"
+          ><img src="images/logo/ieee-24.-yil.png " alt="item 24.yil-logosu"
+        /></a>
+      </div>
+
+      <div
+        style="
+          background-color: black;
+          opacity: 0.7;
+          margin: 5vh 2vw;
+          z-index: 100;
+        "
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="galeri.html" target="_blank"
+              ><img
+                style="opacity: 1"
+                src="images/slider/slider-1.png"
+                class="d-block w-100"
+                alt="galeri"
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="link.html" target="_blank"
+              ><img
+                style="opacity: 1"
+                src="images/slider/slider-2.png"
+                class="d-block w-100"
+                alt="link"
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="video.html" target="_blank"
+              ><img
+                style="opacity: 1"
+                src="images/slider/slider-3.png"
+                class="d-block w-100"
+                alt="video"
+            /></a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Öne Çıkanlar -->
+
+    <div class="one-cikan-baslik yazi yazi-baslik">
+      <h3>Öne Çıkan Etkinliklerimiz</h3>
+    </div>
+
+    <!-- Slider bölümünü iframe ile izole ediyoruz -->
+
+    <iframe
+      id="sliderFrame"
+      src="one-cikan.html"
+      style="width: 100%; border: none; height: 75vh"
+    ></iframe>
+
+    <!-- Hakkımızda -->
+
+    <!-- <div class="hakkimizda-resim1"></div> -->
+
+    <div class="hakkimizda">
+      <div class="yazi yazi-baslik">
+        <h2>Hakkımızda</h2>
+      </div>
+      <br /><br />
+      <div class="yazi-text">
+        <p>
+          &nbsp;&nbsp;&nbsp;IEEE YTÜ Öğrenci Kulübü, Yıldız Teknik
+          Üniversitesi’nin; Elektrik Mühendisliği, Elektronik ve Haberleşme
+          Mühendisliği ve Bilgisayar Mühendisliği öğrencilerinin çabaları ile 8
+          Mayıs 2001 tarihinde kar amacı gütmeyen, dünyanın en büyük mesleki ve
+          teknik organizasyonu olan IEEE ((Institute of Electrical and
+          Electronics Engineers))‘nin 1150 öğrenci kolu arasında resmi olarak
+          faaliyete geçmiştir.<br /><br />&nbsp;&nbsp;&nbsp;Kurulduğu hafta
+          içinde, üye sayısını küçük bir öğrenci grubundan 100’lü rakamlara
+          çıkararak Yıldız Teknik Üniversitesi’nin en çabuk büyüyen
+          kulüplerinden biri olan IEEE YTÜ, tüm Dünya’daki üniversitelerde bir
+          hafta içinde en çok yeni üye alan IEEE Öğrenci Kulübü olarak (107 üye
+          ile) önemli bir rekora imza atmıştır.<br /><br />&nbsp;&nbsp;&nbsp;2001
+          yılından bu yana teknik ve sosyal alanda eğitim ve proje bazlı birçok
+          aktivite gerçekleştiren topluluğumuz, kulüp üyelerinin yetkinlikleri
+          çerçevesinde özverili çalışmalarıyla birçok başarıya imza atarak IEEE
+          Türkiye yapılanmasındaki en gözde kulüplerden biri olmanın haklı
+          gururunu yaşamaktadır.
+        </p>
+      </div>
+    </div>
+
+    <div class="hakkimizda-resim2"></div>
+
+    <!-- Komitelerimiz -->
+
+    <div id="komitelerimiz" class="komiteler">
+      <div class="komite-baslik yazi">
+        <h2>Komitelerimiz</h2>
+      </div>
+
+      <div class="komite-sutun">
+        <div class="komite komite-1">
+          <a href="basin-yayin.html" target="_blank"
+            ><img src="images/komite-logo/basin-yayin.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="cas.html" target="_blank"
+            ><img src="images/komite-logo/cas.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="cs.html" target="_blank"
+            ><img src="images/komite-logo/cs.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="embs.html" target="_blank"
+            ><img src="images/komite-logo/embs.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="iltek.html" target="_blank"
+            ><img src="images/komite-logo/iltek.jpg" alt="komite-logo"
+          /></a>
+        </div>
+
+        <div class="komite komite-1">
+          <a href="kgk.html" target="_blank"
+            ><img src="images/komite-logo/kgk.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="rlc.html" target="_blank"
+            ><img src="images/komite-logo/rlc.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="ttk.html" target="_blank"
+            ><img src="images/komite-logo/ttk.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="wie.html" target="_blank"
+            ><img src="images/komite-logo/wie.jpg" alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="yp.html" target="_blank"
+            ><img src="images/komite-logo/yp.jpg" alt="komite-logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Takımlarımız -->
+
+    <div id="takimlarimiz" class="komiteler">
+      <div class="komite-baslik yazi">
+        <h2>Teknik Takımlarımız</h2>
+      </div>
+
+      <div class="komite-sutun">
+        <div class="komite komite-1">
+          <a href="casmarine.html" target="_blank"
+            ><img
+              src="komitelerimiz/cas/casmarine/images/team-logo1.jpg"
+              alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="cs-forge.html" target="_blank"
+            ><img
+              src="komitelerimiz/cs/cs-forge/images/team-logo1.jpg"
+              alt="komite-logo"
+          /></a>
+        </div>
+        <div class="komite komite-1">
+          <a href="biomech.html" target="_blank"
+            ><img
+              src="komitelerimiz/embs/biomech/images/team-logo1.jpg"
+              alt="komite-logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+   <nav class="footer-menu-main">
+    <div class="footer-menu">
+      <ul class="footer-menu">
+        <li><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="ekibimiz.html">Ekibimiz</a></li>
+        <li><a href="index#komitelerimiz">Komitelerimiz</a></li>
+        <li><a href="iletisim.php">İletişim</a></li>
+      </ul>
+    </div>
+    <div class="footer-logo">
+      <a href="https://www.ieeeytu.com">
+        <img src="images/logo/ieee-ytu-tranparan.png" alt="24.-yıl-logo" />
+      </a>
+    </div>
+
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ieeeytu/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/ieeeytu" target="_blank" class="social-icon">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@ieeeytu"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/user/YTUIEEE"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ytu-ieee-student-branch/posts/?feedView=all"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="footer-menu-copyright">
+      <p>
+        2025 Copyright &nbsp; <i class="fa-regular fa-copyright"></i> &nbsp; Tüm
+        Hakları Saklıdır. IEEE YTU Student Branch
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="general-script.js"></script>
+    <!-- Bootstrap JS ve bağımlılıkları -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
