@@ -30,7 +30,7 @@ try {
     $mail->SMTPAuth   = true;                                       //Enable SMTP authentication
     $mail->CharSet    = 'utf-8';
     $mail->Username   = 'ieeeytuiletisim@yandex.com';                     //SMTP username
-    $mail->Password   = 'cquykyvrlvxaiyde';                               //SMTP password
+    $mail->Password   = 'luayenjlaregqjdz';                               //SMTP password
     $mail->SMTPSecure = "tls";                                          //Enable implicit TLS encryption
     $mail->Port       = 587;                                        //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
