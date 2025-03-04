@@ -1,15 +1,17 @@
+// Loader ve Pop up
+
+window.addEventListener('load', fg_load);
+
+        function fg_load() {
+            document.getElementById('loading').style.display = 'none'; // Loader'ı gizle
+            document.getElementById('popup').style.display = 'flex'; // Pop-up'ı göster
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
 
 
-
-
-// Loader   
-
-window.addEventListener('load', fg_load)
-
-    function fg_load() {
-        document.getElementById('loading').style.display = 'none'
-    }
-    
 
 
 
