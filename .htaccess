@@ -30,4 +30,12 @@ DirectoryIndex index.php index.html
 # Özel 404 hata sayfası
 ErrorDocument 404 /404.html
 
-Options -Indexes
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 0 seconds"
+</IfModule>
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
