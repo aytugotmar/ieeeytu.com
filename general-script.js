@@ -183,6 +183,12 @@ PointerParticles.register();
 // Loader ve Pop up   
 
 window.addEventListener('load', function () {
+  setTimeout(() => {
+      document.getElementById('loading').style.display = 'none'; // Loader'ı gizle
+      }, 1000); // Loader en az 1 saniye ekranda kalır, sonra kapanır
+});
+
+window.addEventListener('load', function () {
   // Pop-up'ı başlangıçta gizle
   document.getElementById('popup').style.display = 'none';
   
@@ -200,9 +206,6 @@ window.addEventListener('load', function () {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
-
-
-
 
 
 
