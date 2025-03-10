@@ -40,4 +40,9 @@ ErrorDocument 404 /404.html
     Header set Expires 0
 </IfModule>
 
+# Önbellek
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+
 
