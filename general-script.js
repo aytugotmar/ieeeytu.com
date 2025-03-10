@@ -1,15 +1,207 @@
-// Loader ve Pop up
+// MOUSE ANİMASYON  
 
-window.addEventListener('load', fg_load);
+class PointerParticle {
+  constructor(spread, speed, component) {
+    const { ctx, pointer, hue } = component;
 
-        function fg_load() {
-            document.getElementById('loading').style.display = 'none'; // Loader'ı gizle
-            document.getElementById('popup').style.display = 'flex'; // Pop-up'ı göster
-        }
+    this.ctx = ctx;
+    this.x = pointer.x;
+    this.y = pointer.y;
+    this.mx = pointer.mx * 0.1;
+    this.my = pointer.my * 0.1;
+    this.size = Math.random() + 1;
+    this.decay = 0.05; // Parçacıklar daha hızlı kaybolacak
+    this.speed = speed * 0.08;
+    this.spread = spread * this.speed;
+    this.spreadX = (Math.random() - 0.5) * this.spread - this.mx;
+    this.spreadY = (Math.random() - 0.5) * this.spread - this.my;
+    this.color = `hsl(${hue}deg 90% 60%)`;
+  }
 
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
+  draw() {
+    this.ctx.fillStyle = this.color;
+    this.ctx.beginPath();
+    this.ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    this.ctx.fill();
+  }
+
+  collapse() {
+    this.size -= this.decay;
+  }
+
+  trail() {
+    this.x += this.spreadX * this.size;
+    this.y += this.spreadY * this.size;
+  }
+
+  update() {
+    this.draw();
+    this.trail();
+    this.collapse();
+  }
+}
+
+class PointerParticles extends HTMLElement {
+  static register(tag = "pointer-particles") {
+    if ("customElements" in window) {
+      customElements.define(tag, this);
+    }
+  }
+
+  static css = `
+    :host {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  `;
+
+  constructor() {
+    super();
+
+    this.canvas;
+    this.ctx;
+    this.fps = 60;
+    this.msPerFrame = 1000 / this.fps;
+    this.timePrevious;
+    this.particles = [];
+    this.pointer = {
+      x: 0,
+      y: 0,
+      mx: 0,
+      my: 0
+    };
+    this.hue = 0;
+  }
+
+  connectedCallback() {
+    const canvas = document.createElement("canvas");
+    const sheet = new CSSStyleSheet();
+
+    this.shadowroot = this.attachShadow({ mode: "open" });
+
+    sheet.replaceSync(PointerParticles.css);
+    this.shadowroot.adoptedStyleSheets = [sheet];
+
+    this.shadowroot.append(canvas);
+
+    this.canvas = this.shadowroot.querySelector("canvas");
+    this.ctx = this.canvas.getContext("2d");
+    this.setCanvasDimensions();
+    this.setupEvents();
+    this.timePrevious = performance.now();
+    this.animateParticles();
+  }
+
+  createParticles(event, { count, speed, spread }) {
+    this.setPointerValues(event);
+
+    for (let i = 0; i < count; i++) {
+      this.particles.push(new PointerParticle(spread, speed, this));
+    }
+  }
+
+  setPointerValues(event) {
+    this.pointer.x = event.clientX - this.offsetLeft;
+    this.pointer.y = event.clientY - this.offsetTop;
+    this.pointer.mx = event.movementX;
+    this.pointer.my = event.movementY;
+  }
+
+  setupEvents() {
+    const targetElements = document.querySelectorAll('[data-particles="true"]');
+
+    targetElements.forEach(element => {
+      element.addEventListener("click", (event) => {
+        this.createParticles(event, {
+          count: 100, // Daha az parçacık
+          speed: Math.random() + 1,
+          spread: 17   // Daha az yayılma
+        });
+      });
+
+      element.addEventListener("pointermove", (event) => {
+        this.createParticles(event, {
+          count: 7, // Daha az parçacık
+          speed: this.getPointerVelocity(event),
+          spread: 2
+        });
+      });
+    });
+
+    window.addEventListener("resize", () => this.setCanvasDimensions());
+  }
+
+  getPointerVelocity(event) {
+    const a = event.movementX;
+    const b = event.movementY;
+    const c = Math.floor(Math.sqrt(a * a + b * b));
+
+    return c;
+  }
+
+  handleParticles() {
+    for (let i = 0; i < this.particles.length; i++) {
+      this.particles[i].update();
+
+      if (this.particles[i].size <= 0.1) {
+        this.particles.splice(i, 1);
+        i--;
+      }
+    }
+  }
+
+  setCanvasDimensions() {
+    const rect = document.body.getBoundingClientRect();
+
+    this.canvas.width = rect.width;
+    this.canvas.height = rect.height;
+  }
+
+  animateParticles() {
+    requestAnimationFrame(() => this.animateParticles());
+
+    const timeNow = performance.now();
+    const timePassed = timeNow - this.timePrevious;
+
+    if (timePassed < this.msPerFrame) return;
+
+    const excessTime = timePassed % this.msPerFrame;
+
+    this.timePrevious = timeNow - excessTime;
+
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.hue = this.hue > 360 ? 0 : (this.hue += 1); // Daha yavaş renk değişimi
+
+    this.handleParticles();
+  }
+}
+
+PointerParticles.register();
+
+// Loader ve Pop up   
+
+window.addEventListener('load', function () {
+  // Pop-up'ı başlangıçta gizle
+  document.getElementById('popup').style.display = 'none';
+  
+  // Loader'ı gizlemeden önce bir süre bekle
+  setTimeout(() => {
+      document.getElementById('loading').style.display = 'none'; // Loader'ı gizle
+      
+      // Loader tamamen kaybolduktan sonra pop-up'ı göster
+      setTimeout(() => {
+          document.getElementById('popup').style.display = 'flex'; // Pop-up'ı göster
+      }, 200); // Loader kaybolduktan 200ms sonra pop-up açılır
+  }, 1000); // Loader 1 saniye sonra kaybolur
+});
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+
 
 
 

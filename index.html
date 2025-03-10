@@ -48,15 +48,21 @@
     />
   </head>
 
-  <body>
+  <body data-particles="true">
+
+    <!-- MOUSE EFFECT   -->
+
+    <pointer-particles></pointer-particles>
+
 
     <!-- Loader   -->
 
     <div id="loading">
-      <img src="images/loader.svg" alt="loader">
+      <iframe src="loading/index.html" frameborder="0"></iframe>
+      <!-- <img src="images/loader.svg" alt="loader"> -->
     </div>
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup" style="display: none;">
       <div class="popup-content">
           <button class="popup-close" onclick="closePopup()">X</button>
           <img src="images/afis.jpg" alt="20. İLTEK Günleri Afişi">
@@ -239,6 +245,7 @@
     </nav>
 
     <!-- Ana İçerik -->
+
 
     <!-- Kapak Resmi -->
     <div class="kapak">

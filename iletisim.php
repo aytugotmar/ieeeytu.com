@@ -32,6 +32,7 @@ session_start();
       src="https://kit.fontawesome.com/7d82d2409d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="iletisim/style.css" />
     <link rel="stylesheet" href="mobile.css" />
@@ -307,6 +308,10 @@ session_start();
                       required
                     ></textarea>
                   </div>
+
+                  <!-- Google reCAPTCHA -->
+                  <div class="g-recaptcha mb-3" data-sitekey="6LdhQSMqAAAAAEhciWZ_7eN63ntMYUVxF7G7q1LR"></div>
+
                   <div class="col-12">
                     <button class="btn btn-outline-warning" style="width: 100%">
                       Gönder
@@ -318,6 +323,44 @@ session_start();
             </div>
 
           </div>
+
+<!-- RECAPTCHA           -->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $secretKey = "6LdhQSMqAAAAAPqApgCIX9lXDzpAj7UIuLH8Gt9_"; // Google reCAPTCHA Secret Key
+    $captcha = $_POST['g-recaptcha-response'];
+
+    if (!$captcha) {
+        die("Lütfen reCAPTCHA doğrulamasını tamamlayın.");
+    }
+
+    // Google reCAPTCHA doğrulaması
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = [
+        'secret' => $secretKey,
+        'response' => $captcha,
+        'remoteip' => $_SERVER['REMOTE_ADDR']
+    ];
+
+    $options = [
+        'http' => [
+            'method'  => 'POST',
+            'header'  => "Content-Type: application/x-www-form-urlencoded\r\n",
+            'content' => http_build_query($data)
+        ]
+    ];
+    $context  = stream_context_create($options);
+    $response = file_get_contents($url, false, $context);
+    $responseKeys = json_decode($response, true);
+
+    if ($responseKeys["success"]) {
+        echo "Mesajınız başarıyla gönderildi!";
+    } else {
+        echo "reCAPTCHA doğrulaması başarısız oldu.";
+    }
+}
+?>
+
 
           <!-- Harita   -->
 
