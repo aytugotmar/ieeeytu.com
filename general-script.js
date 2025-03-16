@@ -1,3 +1,5 @@
+
+
 // MOUSE ANİMASYON  
 
 class PointerParticle {
@@ -422,6 +424,18 @@ const posts = [
             }
         }
     });
+
+
+// Komitelerimiz ve Takımlarımız  
+
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 
 
 
