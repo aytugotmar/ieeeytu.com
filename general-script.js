@@ -206,8 +206,17 @@ window.addEventListener('load', function () {
 });
 
 function closePopup() {
-  document.getElementById("popup").style.display = "none";
+  let popup = document.getElementById("popup");
+  let video = popup.querySelector("video");
+
+  if (video) {
+    video.pause();      // Videoyu durdur
+    video.currentTime = 0; // Videoyu en başa sar
+  }
+
+  popup.style.display = "none"; // Pop-up'ı gizle
 }
+
 
 
 
