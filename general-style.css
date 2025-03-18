@@ -593,6 +593,12 @@ nav .sidebar li a:hover::after {
   max-width: 100%;
   border-radius: 10px;
 }
+.popup iframe {
+  padding: 5px;
+  max-height: 80vh;
+  max-width: 100%;
+  border-radius: 10px;
+}
 .popup-close {
   position: absolute;
   top: 5px;
