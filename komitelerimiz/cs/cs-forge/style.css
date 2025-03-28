@@ -290,3 +290,19 @@ body {
   max-width: 75px;
   padding-right: 10px;
 }
+
+
+/* Oyun Tanıtım */
+
+.steam-oyun{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.steam-oyun iframe{
+  max-width: 100%;
+}
