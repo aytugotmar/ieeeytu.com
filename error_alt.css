@@ -1,0 +1,30 @@
+/* Google Fontları: Jersey 10, Tangerine, Open Sans, Roboto, Lato */
+
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap");
+
+* {
+    background: black
+}
+
+/* 404   */
+
+#error {
+    padding-top: 0px;
+    margin-top: 0px;
+    max-height: 100vh;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+  }
+
+.error img {
+    max-width: 50vh;
+  }
+
+.error h3 {
+    font-size: 24px;
+  }
