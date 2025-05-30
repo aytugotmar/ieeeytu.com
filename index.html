@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="tr">
   <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -49,31 +51,49 @@
   </head>
 
   <body data-particles="true">
-
     <!-- MOUSE EFFECT   -->
 
     <pointer-particles></pointer-particles>
 
-
     <!-- Loader   -->
 
     <div id="loading">
-      <iframe src="loading/index.html" frameborder="0"></iframe>
-      <!-- <img src="images/loader.svg" alt="loader"> -->
+      <!-- <iframe src="loading/index.html" frameborder="0"></iframe> -->
+      <img src="images/loader.svg" alt="loader" />
     </div>
 
     <!-- Pop Up -->
 
-    <div class="popup" id="popup" style="display: none;">
+    <!-- <div class="popup" id="popup" style="display: none">
       <div class="popup-content">
-          <button class="popup-close" onclick="closePopup()">X</button>
-          <!-- <img src="images/afis.jpg" alt="20. İLTEK Günleri Afişi"> -->
-          <!-- <video controls autoplay muted loop="loop" src="images/20. İLTEK GÜNLERİ.mp4">20. İLTEK GÜNLERİ</video> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/0k5lykbOr7U?si=lTGUmlycUP1JvSb-?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; muted; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <p><strong>20. İLTEK Günleri'ne hazır olun! Detaylar için bizi takip etmeyi unutmayın. Başvuru için : <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6bnXf7vtQaG7_pXB07mmrsznO09jxkDaiU5NLEIDGiaMmwg/viewform?fbclid=PAY2xjawI3_wdleHRuA2FlbQIxMAABpkC2Mq5Dik65IvZg28Pb4Ce1pdGDcKLYmGJCpNH69PRaliLBsdvGg3O53A_aem_HL0M3lrpVDZcLwKM_8WmLQ" target="_blank" target="_blank" rel="noopener noreferrer">Kayıt Formu</a></strong></p>
+        <button class="popup-close" onclick="closePopup()">X</button>
+        <img src="images/afis.jpg" alt="20. İLTEK Günleri Afişi">
+        <video controls autoplay muted loop="loop" src="images/20. İLTEK GÜNLERİ.mp4">20. İLTEK GÜNLERİ</video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/0k5lykbOr7U?si=lTGUmlycUP1JvSb-?autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; muted; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          <strong
+            >20. İLTEK Günleri'ne hazır olun! Detaylar için bizi takip etmeyi
+            unutmayın. Başvuru için :
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd6bnXf7vtQaG7_pXB07mmrsznO09jxkDaiU5NLEIDGiaMmwg/viewform?fbclid=PAY2xjawI3_wdleHRuA2FlbQIxMAABpkC2Mq5Dik65IvZg28Pb4Ce1pdGDcKLYmGJCpNH69PRaliLBsdvGg3O53A_aem_HL0M3lrpVDZcLwKM_8WmLQ"
+              target="_blank"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kayıt Formu</a
+            ></strong
+          >
+        </p>
       </div>
-    </div>
-
+    </div> -->
 
     <!-- Header -->
 
@@ -106,106 +126,109 @@
         </a>
       </div>
 
-     <!-- Menü -->
+      <!-- Menü -->
 
-     <nav>
-      <ul class="sidebar menu">
-        <li onclick="closeSidebar()">
-          <a href="javascript:void(0)"
-            ><i class="fa-solid fa-xmark" style="color: #ffa300"></i
-          ></a>
-        </li>
-        <li><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
-        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-        <li><a href="ekibimiz.html">Ekibimiz</a></li>
-        <li onclick="closeSidebar()">
-          <a href="javascript:void(0);" onclick="scrollToSection('komitelerimiz')">Komitelerimiz</a>
-        </li>
-        <li onclick="closeSidebar()">
-          <a href="javascript:void(0);" onclick="scrollToSection('takimlarimiz')">Teknik Takımlarımız</a>
-        </li>
-        <li><a href="iletisim.php">İletişim</a></li>
-      </ul>
+      <nav>
+        <ul class="sidebar menu">
+          <li onclick="closeSidebar()">
+            <a href="javascript:void(0)"
+              ><i class="fa-solid fa-xmark" style="color: #ffa300"></i
+            ></a>
+          </li>
+          <li><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="ekibimiz.html">Ekibimiz</a></li>
+          <li onclick="closeSidebar()">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('komitelerimiz')"
+              >Komitelerimiz</a
+            >
+          </li>
+          <li onclick="closeSidebar()">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('takimlarimiz')"
+              >Teknik Takımlarımız</a
+            >
+          </li>
+          <li><a href="iletisim.php">İletişim</a></li>
+        </ul>
 
-      <ul class="menu">
-        <li class="hideOnMobile"><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
-        <li class="hideOnMobile">
-          <a href="hakkimizda.html">Hakkımızda</a>
-        </li>
-        <li class="hideOnMobile">
-          <a href="ekibimiz.html">Ekibimiz</a>
-        </li>
-        <li class="hideOnMobile">
-          <a href="javascript:void(0);" onclick="scrollToSection('komitelerimiz')"
-            >Komitelerimiz &nbsp;&nbsp;
-            <i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <ul class="hideOnMobile dropdown">
-            <li>
-              <a href="basin-yayin.html"
-                >Basın-Yayın</a
-              >
-            </li>
-            <li>
-              <a href="cas.html"
-                >CAS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
-              ></a>
-              <ul class="hideOnMobile dropside">
-                <li>
-                  <a href="casmarine.html"
-                    >CASMARINE</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="cs.html"
-                >CS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
-              ></a>
-              <ul class="hideOnMobile dropside">
-                <li>
-                  <a href="cs-forge.html"
-                    >CS FORGE</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="embs.html"
-                >EMBS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
-              ></a>
-              <ul class="hideOnMobile dropside">
-                <li>
-                  <a href="biomech.html"
-                    >BIOMECH</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a href="iltek.html">İLTEK</a></li>
-            <li><a href="kgk.html">KGK</a></li>
-            <li><a href="rlc.html">RLC</a></li>
-            <li><a href="ttk.html">TTK</a></li>
-            <li><a href="wie.html">WIE</a></li>
-            <li><a href="yp.html">YP</a></li>
-          </ul>
-        </li>
-        <li class="hideOnMobile">
-          <a href="iletisim.php">İletişim</a>
-        </li>
-        <li
-          class="menu-button"
-          onclick="showSidebar()"
-          style="margin-left: 1px"
-        >
-          <a href="javascript:void(0)"
-            ><i class="fa-solid fa-bars" style="color: #ffa300"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="menu">
+          <li class="hideOnMobile">
+            <a href="https://www.ieeeytu.com">Ana Sayfa</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="hakkimizda.html">Hakkımızda</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="ekibimiz.html">Ekibimiz</a>
+          </li>
+          <li class="hideOnMobile">
+            <a
+              href="javascript:void(0);"
+              onclick="scrollToSection('komitelerimiz')"
+              >Komitelerimiz &nbsp;&nbsp;
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="hideOnMobile dropdown">
+              <li>
+                <a href="basin-yayin.html">Basın-Yayın</a>
+              </li>
+              <li>
+                <a href="cas.html"
+                  >CAS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li>
+                    <a href="casmarine.html">CASMARINE</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="cs.html"
+                  >CS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li>
+                    <a href="cs-forge.html">CS FORGE</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="embs.html"
+                  >EMBS &nbsp;&nbsp; <i class="fa-solid fa-chevron-right"></i
+                ></a>
+                <ul class="hideOnMobile dropside">
+                  <li>
+                    <a href="biomech.html">BIOMECH</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="iltek.html">İLTEK</a></li>
+              <li><a href="kgk.html">KGK</a></li>
+              <li><a href="rlc.html">RLC</a></li>
+              <li><a href="ttk.html">TTK</a></li>
+              <li><a href="wie.html">WIE</a></li>
+              <li><a href="yp.html">YP</a></li>
+            </ul>
+          </li>
+          <li class="hideOnMobile">
+            <a href="iletisim.php">İletişim</a>
+          </li>
+          <li
+            class="menu-button"
+            onclick="showSidebar()"
+            style="margin-left: 1px"
+          >
+            <a href="javascript:void(0)"
+              ><i class="fa-solid fa-bars" style="color: #ffa300"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
 
-      
       <div class="social-links">
         <a
           href="https://www.facebook.com/ieeeytu/?locale=tr_TR"
@@ -249,7 +272,6 @@
     </nav>
 
     <!-- Ana İçerik -->
-
 
     <!-- Kapak Resmi -->
     <div class="kapak">
@@ -462,23 +484,17 @@
       <div class="komite-sutun">
         <div class="komite komite-1">
           <a href="casmarine.html" target="_blank"
-            ><img
-              src="images/komite-logo/casmarine.png"
-              alt="komite-logo"
+            ><img src="images/komite-logo/casmarine.png" alt="komite-logo"
           /></a>
         </div>
         <div class="komite komite-1">
           <a href="cs-forge.html" target="_blank"
-            ><img
-              src="images/komite-logo/cs-forge.png"
-              alt="komite-logo"
+            ><img src="images/komite-logo/cs-forge.png" alt="komite-logo"
           /></a>
         </div>
         <div class="komite komite-1">
           <a href="biomech.html" target="_blank"
-            ><img
-              src="images/komite-logo/biomech.png"
-              alt="komite-logo"
+            ><img src="images/komite-logo/biomech.png" alt="komite-logo"
           /></a>
         </div>
       </div>
@@ -486,21 +502,21 @@
 
     <!-- Footer -->
 
-   <nav class="footer-menu-main">
-    <div class="footer-menu">
-      <ul class="footer-menu">
-        <li><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
-        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-        <li><a href="ekibimiz.html">Ekibimiz</a></li>
-        <li><a href="index#komitelerimiz">Komitelerimiz</a></li>
-        <li><a href="iletisim.php">İletişim</a></li>
-      </ul>
-    </div>
-    <div class="footer-logo">
-      <a href="https://www.ieeeytu.com">
-        <img src="images/logo/ieee-ytu-tranparan.png" alt="24.-yıl-logo" />
-      </a>
-    </div>
+    <nav class="footer-menu-main">
+      <div class="footer-menu">
+        <ul class="footer-menu">
+          <li><a href="https://www.ieeeytu.com">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="ekibimiz.html">Ekibimiz</a></li>
+          <li><a href="index#komitelerimiz">Komitelerimiz</a></li>
+          <li><a href="iletisim.php">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <a href="https://www.ieeeytu.com">
+          <img src="images/logo/ieee-ytu-tranparan.png" alt="24.-yıl-logo" />
+        </a>
+      </div>
 
       <div class="footer-social">
         <a
@@ -546,7 +562,10 @@
 
     <div class="footer-menu-copyright">
       <p>
-        2025 Copyright &nbsp; <i class="fa-regular fa-copyright"></i> &nbsp; Tüm
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright &nbsp; <i class="fa-regular fa-copyright"></i> &nbsp; Tüm
         Hakları Saklıdır. IEEE YTU Student Branch
       </p>
     </div>
