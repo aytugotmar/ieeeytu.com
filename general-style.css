@@ -57,11 +57,11 @@ p {
   z-index: 999;
 }
 
-.loader {
+/* .loader {
   perspective: 700px;
-}
+} */
 
-.loader span {
+/* .loader span {
   color: black;
   font-size: 130px;
   font-family: "Poppins", sans-serif;
@@ -69,9 +69,9 @@ p {
   animation: flip 2.6s infinite linear;
   transform-origin: 0 70%;
   transform-style: preserve-3d;
-}
+} */
 
-@keyframes flip {
+/* @keyframes flip {
   35% {
     transform: rotateX(360deg);
     color: white;
@@ -79,9 +79,9 @@ p {
   100% {
     transform: rotateX(360deg);
   }
-}
+} */
 
-.loader > span:nth-child(even) {
+/* .loader > span:nth-child(even) {
   color: #ffa300;
 }
 .loader > span:nth-child(2) {
@@ -104,17 +104,17 @@ p {
 }
 .loader > span:nth-child(8) {
   animation-delay: 2s;
-}
+} */
 
 .loader img {
-  max-width: 50%;
+  max-width: 100%;
 }
 
-#loading iframe {
+/* #loading iframe {
   padding-top: 10vh;
   width: 100%;
   height: 100vh;
-}
+} */
 
 /* IEEE GLOBAL */
 
