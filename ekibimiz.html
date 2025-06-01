@@ -483,7 +483,12 @@
     <!-- Body sonunda -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: function () {
+          // Mobil cihazda isek devre dışı bırak
+          return window.innerWidth < 720;
+        },
+      });
     </script>
   </body>
 </html>
