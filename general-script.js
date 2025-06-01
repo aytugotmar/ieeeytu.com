@@ -1,3 +1,12 @@
+//AOS
+
+AOS.init({
+  disable: function () {
+    // Mobil cihazda isek devre dışı bırak
+    return window.innerWidth < 768;
+  },
+});
+
 // MOUSE ANİMASYON
 
 class PointerParticle {
