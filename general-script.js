@@ -185,7 +185,7 @@ PointerParticles.register();
 window.addEventListener("load", function () {
   setTimeout(() => {
     document.getElementById("loading").style.display = "none"; // Loader'ı gizle
-  }, 2000); // Loader en az 1 saniye ekranda kalır, sonra kapanır
+  });
 });
 
 window.addEventListener("load", function () {
@@ -200,7 +200,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       document.getElementById("popup").style.display = "flex"; // Pop-up'ı göster
     }, 200); // Loader kaybolduktan 200ms sonra pop-up açılır
-  }, 1000); // Loader 1 saniye sonra kaybolur
+  });
 });
 
 function closePopup() {
